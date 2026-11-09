@@ -1,0 +1,57 @@
+{
+  "dataset_sha256": "6b284576f2b482bc3676bd7d71b863bdd671c67bef611fac683f41a6d15bc750",
+  "checkpoint_sha256": "5ca6278abe08c6df725a3388dfa59c5215757c6920eb5689a897d51c15edb881",
+  "test_rows_labels_sha256": "3d1c602715489a340342d1206702d8becbb8be160cd809cc9440d2bc27ee5227",
+  "test_digest_encoding": "C-order little-endian int64 pairs of zero-based source row and numeric class ID",
+  "script_sha256": "2fc1aefde052f8d87b33a7c6e4f6f5260fceeb10c308a4d5c9b4d1c1e76edbeb",
+  "environment": {
+    "python": "3.13.5",
+    "torch": "2.12.0",
+    "numpy": "2.4.5",
+    "platform": "Darwin",
+    "architecture": "arm64",
+    "device": "cpu",
+    "torch_threads": 4
+  },
+  "checkpoint_epoch": 29,
+  "checkpoint_validation_accuracy": 0.7125,
+  "batch_size": 32,
+  "pool_and_test_seed": 42,
+  "source_window": 5000,
+  "sample_stride": 10,
+  "historical_run_binding": "unresolved",
+  "conditions": {
+    "baseline": {
+      "correct": 2813,
+      "total": 4000,
+      "accuracy": 0.70325,
+      "loss": 1.04606594
+    },
+    "zero_prefix_200": {
+      "correct": 491,
+      "total": 4000,
+      "accuracy": 0.12275,
+      "loss": 4.9736859
+    },
+    "outgoing_prefix_200": {
+      "correct": 287,
+      "total": 4000,
+      "accuracy": 0.07175,
+      "loss": 6.30026741
+    },
+    "direction_rewrite_12": {
+      "correct": 2813,
+      "total": 4000,
+      "accuracy": 0.70325,
+      "loss": 1.05248923
+    },
+    "timing_identity": {
+      "correct": 2813,
+      "total": 4000,
+      "accuracy": 0.70325,
+      "loss": 1.04606594,
+      "verified_elementwise_identity": true,
+      "metrics_reused_from_baseline": true
+    }
+  }
+}

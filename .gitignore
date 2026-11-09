@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+.env.*
+data/
+checkpoints/
+*.npy
+*.npz
+*.pt
+*.pth
+*.pkl
+*.pcap
+*.pcapng
+/runs/
